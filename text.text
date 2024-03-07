@@ -1,0 +1,538 @@
+  
+  box-shadow: 1px 1px 4px 0px rgba(184, 12, 252, 0.082), 1px 1px 4px 0px rgba(184, 12, 252, 0.082) inset;
+
+   box-shadow: 1px 1px 4px 0px rgba(179, 0, 179, 0.116), 1px 1px 4px 0px rgba(204, 0, 204, 0.103) inset;
+  
+  
+  autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+  
+
+table,
+th,
+td {
+
+    text-align     : center;
+    border-collapse: collapse;
+    padding        : 7px;
+}
+
+table {
+    width: 100%;
+}
+
+thead th {
+    color           : #fff;
+    position        : sticky;
+    top             : 0;
+    background-color: #2c0666;
+}
+
+tbody tr {
+    color    : #2c0666;
+    font-size: 15px;
+}
+
+.body tbody tr {
+    color    : #2c0666;
+    font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #4a07e62d;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 11rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    td.nameaff:not(:first-of-type) {
+        min-width : 25rem;
+        text-align: left;
+    }
+}
+
+
+
+
+function toggleDetails() {
+    var detailsPopup = document.getElementById('showDetails');
+    var payPopup = document.getElementById('pay');
+
+ 
+    var detailsDisplay = window.getComputedStyle(detailsPopup).display;
+    var payDisplay = window.getComputedStyle(payPopup).display;
+
+    if (detailsDisplay === 'flex' && payDisplay === 'flex') {
+        detailsPopup.style.display = 'none';
+        payPopup.style.display = 'none';
+    } else {
+        detailsPopup.style.display = 'flex';
+        showPayModal();  
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var closeButton = document.querySelector('.close-btn button');
+    closeButton.addEventListener('click', toggleDetails);
+});
+
+function showModal() {
+    if (typeof bootstrap !== 'undefined') {
+        new bootstrap.Modal(document.getElementById('myModal')).show();
+    } else {
+        console.error('Framework is not loaded. Make sure to include the file.');
+    }
+}
+
+function showPayModal() {
+    if (typeof bootstrap !== 'undefined') {
+      
+        var payModal = document.createElement('div');
+        payModal.classList.add('modal');
+        payModal.id = 'pay';
+        payModal.tabIndex = -1;
+        payModal.innerHTML = `
+       
+        `;
+
+        document.body.appendChild(payModal);
+
+        new bootstrap.Modal(payModal).show();
+    } else {
+        console.error('Framework is not loaded. Make sure to include the file.');
+    }
+}
+
+const addToCartButton = document.getElementById('addtocart');
+addToCartButton.addEventListener('click', showModal);
+
+
+const proceedButton = document.getElementById('proceed');
+proceedButton.addEventListener('click', showPayModal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="cent">
+    <section class="RecentActivities">
+      <div class="Viewmore">
+        <div class="RecentActivities1">Recent Activities</div>
+        <div class="RecentActivities1"><a href="#viewmore" style="text-decoration: none;">View More</a></div>
+      </div>
+      <div class="ListFrame1">
+        
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+
+        <div class="Listly">
+          <div class="icon-list" >
+          <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684"  style="align-items: flex-start;" >
+            <div class="WelcomeBonus1">Transfer to bank</div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+          </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500; ">
+              Successful</div>
+          </div>
+
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Direct Referral </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Indirect Referral</div> 
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Sponsord Post </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Data Purchase</div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Airtime Purchase </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+            <img class="vpd" src="/image/Arrow - Down Square (1).svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">P2P </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">20,000</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+        <div class="Listly">
+          <div class="icon-list">
+          <img class="vpd" src="/image/Arrow - Down Square.svg" />
+          <div class="Frame1256684" style="align-items: flex-start;">
+            <div class="WelcomeBonus1">Welcome Bonus </div>
+            <div class="timelist">9th July 2023 | 3:30pm</div>
+          </div>
+        </div>
+
+          <div class="Frame1256684">
+            <div class="WelcomeBonus1">₦500</div>
+            <div class="timelist" style="color: #00D293; font-size: 14px; font-weight: 500">
+              Successful</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+        <div class="vendor-body1">
+            <div class="vendor-head">
+                <span>Best top 20 selling products</span>
+                <span>Swipe Left & Right</span>
+            </div>
+            <div class="vendor-body">
+                <div class="table-content body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th class="nameaff" style="text-align: left;">Product &amp; Vendor</th>
+                                <th style="text-align: left;">Amt/Comm</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>$50.50</h4>
+                                    <span>50% comm</span>
+                                </td>
+                            </tr>
+                          
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+  
+  
+  <div class="vendor-body1">
+            <div class="vendor-head">
+                <span>Sales Transaction List</span>
+                <span>Swipe Left & Right</span>
+            </div>
+            <div class="vendor-body">
+                <div class="table-content body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th class="nameaff" style="text-align: left;">Product &amp; Vendor</th>
+                                <th style="text-align: left;">Customer Info</th>
+                                <th>Price($)</th>
+                                <th>Amt/Earn($)</th>
+                                <th>Product Type</th>
+                                <th>Transaction</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Digital</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #04fc1869; color: #0c007c;">
+                                        <span>Completed</span>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Digital</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #fc040469; color: #0c007c;">
+                                        <span>Pending</span>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="nameaff nameaff34">Facebook Ads Sales Generator Program.<span>by Alphatech
+                                        Multimedia Techonolgy</span>
+                                </td>
+                                <td class="customer" style="text-align: left;">
+                                    <h4>itodogabriel40@gmail.com</h4>
+                                    <span>Alphatech Multimedia Technology</span>
+                                    <span>+2349129079450</span>
+                                </td>
+                                <td><strong>$67</strong></td>
+                                <td><strong>$34.70</strong></td>
+                                <td>Physical</td>
+                                <td>7435097433648</td>
+                                <td> <button class="prombtn prom" onclick=""
+                                        style="background-color: #04fc1869; color: #0c007c;">
+                                        <span>Completed</span>
+                                    </button></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>

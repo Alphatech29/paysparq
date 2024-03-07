@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="Bitpluse" name="description">
+    <meta content="Alphatech Multimedia Technologies" name="author">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/image/logo/favicon.png">
+
+    <!--Googe Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--Boostrap Css-->
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="home/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css">
+
+    <!--Fontawesome css-->
+    <link rel="stylesheet" href="home/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="home/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="home/fontawesome/css/all.css">
+    <link rel="stylesheet" href="home/fontawesome/css/all.min.css">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="home/css/main.css">
+    <link rel="stylesheet" href="home/css/main.min.css">
+    <link rel="stylesheet" href="home/css/modal.css">
+    <link rel="stylesheet" href="home/css/responsive.css">
+    <title>
+        <%= title %>
+    </title>
+
+
+    <style>
+        body {
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="header-container">
+            <div class="header-logo">Paysparq</div>
+
+              <div class="humber d-lg-none"  data-bs-toggle="offcanvas" data-bs-target="#offcanvaStart" aria-controls="offcanvaStart"><i class="fa-solid fa-bars"></i></div>   
+
+              <div class="header-menu">
+                <div class="menu">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Product
+                    </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        
+                      </div>
+                    </li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="auth-btn">
+                <a class="login" href="#">Trade Now <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+              </div>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvaStart" aria-labelledby="offcanvaStart">
+                <div class="offcanvas-header">
+                   <div class="header-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50"height="50"></a></div>
+                  <span data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="offcanvas-body"></div>
+              </div>
+
+        </div>
+    </header>
+  

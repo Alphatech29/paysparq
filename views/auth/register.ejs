@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Bitpluse" name="description">
+    <meta content="Alphatech Multimedia Technologies" name="author">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/image/logo/favicon.png">
+
+    <!--Googe Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--Boostrap Css-->
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/home/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css">
+
+    <!--Fontawesome css-->
+    <link rel="stylesheet" href="/home/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/home/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/home/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/home/fontawesome/css/all.min.css">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="/home/css/main.css">
+    <link rel="stylesheet" href="/home/css/main.min.css">
+    <link rel="stylesheet" href="/home/css/modal.css">
+    <link rel="stylesheet" href="/home/css/responsive.css">
+    <title>
+        <%= title %>
+    </title>
+
+
+    <style>
+        body {
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+
+<body class="reg">
+
+
+    <section class="auth">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-logo"><a href="/"><img src="/image/logo/Bitpluse-Logo.png" alt="" width="50"
+                                height="50"></a></div>
+                    <div class="refer">
+                        <p>Welcome to Bitpluse! Please create your account by filling out the form with valid information</p>
+                        <span>Your Upline is <b> Bitpluse</b></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form action="">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" name="fullname" class="form-control" id="fullname"
+                                placeholder="Please entr your fullname.">
+                            <label for="fullname">Fullname</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Please entr your vaild email address.">
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="username" name="username" id="username" class="form-control"
+                                placeholder="Please entr your username.">
+                            <label for="username">User Name</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" name="password" id="password" class="form-control password-input" placeholder="Please enter your password.">
+                            <label for="password">Password</label>
+                            <span class="toggle-password" onclick="togglePasswordVisibility('password', this)">
+                                <i class="fa-regular fa-eye-slash toggle-icon"></i>
+                            </span>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="password" name="confirmpassword" id="confirmpassword" class="form-control password-input" placeholder="Please enter your confirm password.">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <span class="toggle-password" onclick="togglePasswordVisibility('confirmpassword', this)">
+                                <i class="fa-regular fa-eye-slash toggle-icon"></i>
+                            </span>
+                        </div>
+                        
+
+                        <div class="form-floating mb-3">
+                            <input type="phone" name="phone" id="phone" class="form-control"
+                                placeholder="Please entr your phone number.">
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-control set" id="countrySelect">
+                                <option selected="">Choose Your Country</option>
+                            </select>
+                            <label for="package">Country</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-control set" id="package">
+                                <option selected="">Choose Your Package</option>
+                                <option value="">Bitpluse ₦5000</option>
+                                <option value="">Bitpluse Pro ₦8000</option>
+                            </select>
+                            <label for="package">Package</label>
+                        </div>
+                        <div class="get-coupon">
+                            <span>Dont Have Code? <a href="/merchant">Get Code</a></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="coupon" name="coupon" id="coupon" class="form-control"
+                                placeholder="Please entr your Coupon.">
+                            <label for="cpupon">Coupon Code</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I agree to <a href="#">privacy policy & terms</a>
+                            </label>
+                        </div>
+        
+                        <div class="sign-btn">
+                            <button type="submit">Sign Up</button>
+                            <span>Already have an Account? <a href="/auth/sign-in">Sign in</a></span>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!--Boostrap Js -->
+    <script src="/home/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="/home/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/home/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="/home/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Fontawesome Js-->
+    <script src="/home/fontawesome/js/all.js"></script>
+    <script src="/home/fontawesome/js/all.min.js"></script>
+    <script src="/home/fontawesome/js/fontawesome.js"></script>
+    <script src="/home/fontawesome/js/fontawesome.min.js"></script>
+
+    <!--Custom Js-->
+    <script src="/home/js/main.js"></script>
+
+</body>
+
+</html>
