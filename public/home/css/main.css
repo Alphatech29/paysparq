@@ -93,28 +93,38 @@ header.nav .header-container .header-menu .menu ul{
 header.nav .header-container .header-menu .menu ul li a{
    text-decoration: none;
    font-size: 16px;
-   color: var(--carbor-color);
-}
+   color: #032e4b;
+   font-weight: 500;
+   }
 header.nav .header-container .auth-btn a{
     text-decoration: none;
     font-size: 16px;
     color: var(--Text-color);
-    background-color:#005e6f;
-    padding: 10px 20px 10px 20px;
+    background: linear-gradient(to left, #007c92 0%, #ff7808 100%);
+    padding: 7px 20px 7px 20px;
     border-radius: 10px;
 }
 header.nav .header-container .auth-btn a:hover{
     text-decoration: none;
     font-size: 16px;
     color: var(--secondary-color);
-    background-color:transparent;
-    padding: 10px 20px 10px 20px;
+    background:transparent;
+    padding: 7px 20px 7px 20px;
     border-radius: 10px;
     border: #005e6f 1px solid;
 }
 
 section.footer{
-    background-color: #290b00;
+    background-color: #03232b;
+    z-index: 1;
+}
+section.footer .footer-img{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    filter: contrast(60%);
+    -webkit-filter: contrast(60%);
 }
 section.footer .container{
     padding: .20rem;
@@ -122,7 +132,7 @@ section.footer .container{
 section.footer .container ul{
   list-style: none;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 3rem;
 }
 section.footer .container p{
     color: var(--Text-color);
@@ -132,6 +142,7 @@ section.footer .container p{
     color: var(--Text-color);
     padding-top: 15px;
     padding: 0;
+    font-size: 20px;
   }
 section.footer .container ul li a{
     text-decoration: none;
@@ -145,30 +156,12 @@ section.footer .container ul li a{
     border-bottom: var(--primary-color) solid 1px;
 }
 section.hero{
-    background-image: url(/image/slanted-gradient.svg);
+    background-image: url(/image/paysparq-bg.svg);
     background-size: cover;
     position: relative;
     overflow: hidden;
 }
-section.hero::before{
-    content: "<i class="fa-brands fa-btc"></i>";
-    background-color: var(--primary-color);
-    position: relative;
-    overflow: hidden;
-}
-/* section.hero .dr{
-    background-color: var(--primary-color);
-    position: absolute;
-    font-size: 25rem;
-    top: 0;
-    left: 0;
-    color: #451605;
-    filter: blur(40px);
-    -webkit-filter: blur(40px);
-    transform: rotate(-60deg);
-    z-index: 1;
-    overflow: hidden;
-} */
+
 section.hero .container{
  display: flex;
  justify-content: center;
@@ -220,3 +213,165 @@ section.hero .container .content .content-btn a.btn2{
  section.hero .container .content .content-btn a.btn2:hover{
     background-color: #290b0085;
  }
+ section.send{
+    background-color: #fff;
+ }
+ section.send .container{
+    padding: 4rem 1rem 4rem 1rem;
+ }
+ section.send .container .row{
+    gap: 4.5rem;
+ }
+ section.send .container .row h2{
+    color: #032e4b;
+    font-weight: 700;
+ }
+ section.send .container .row p{
+    color: #1e283a;
+ }
+ section.send .container .choose{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+ }
+ section.send .container .choose a{
+   font-size: 16px;
+   text-decoration: none;
+   color: var(--primary-color);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-weight: 600;
+ }
+ section.send .container .choose a:hover{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+ section.send .container .choose a span{
+    display: flex;
+   width:2rem;
+   height: 0.10rem;
+   background-color: var(--primary-color);
+  }
+  section.send .container .choose a span:hover{
+   display: flex;
+   width:1.5rem;
+   height: 0.10rem;
+   background-color: var(--primary-color);
+   transform: rotate(90deg);
+}
+section.send .container .choose a:hover {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+section.trade{
+    background-color: #fff;
+    padding: 20px;
+}
+section.trade .container{
+    background-image: url(/image/tg-bg.svg);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 2rem 3rem 2rem 3rem;
+}
+section.trade .container h2{
+   font-weight: 700;
+   font-size: 2.5rem;
+   color: #032e4b;
+}
+section.trade .container p{
+    font-weight: 500;
+    font-size: 15.5px;
+    color: #032e4b;
+    padding-bottom: 30px;
+ }
+ section.trade .container a{
+    font-weight: 500;
+    font-size: 15.5px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 10px;
+    background: linear-gradient(to left, #007c92 0%, #ff7808 100%);
+ }
+ section.trade .container a:hover{
+    font-weight: 500;
+    font-size: 15.5px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 10px;
+    background: linear-gradient(to left, #ff7808  0%, #007c92 100%);
+ }
+ section.trade .container ul{
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+   
+ }
+ section.trade .container ul li{
+    background-color: #fff;
+    padding: 10px 5px 10px 15px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    color: #032e4b;
+}
+section.trade .container ul li span{
+   color: var(--primary-color);
+   font-size: 20px;
+}
+section.trade .container ul li:nth-child(1){
+   margin-left: 10px;
+}
+section.trade .container ul li:nth-child(2){
+    margin-left: 45px;
+ }
+ section.trade .container ul li:nth-child(3){
+    margin-left: 50px;
+ }
+ section.coin{
+    background-image: url(/image/tg-bg-cyp.svg);
+    background-size: cover;
+ }
+ section.coin .container{
+   padding: 30px;
+ }
+ section.coin .container h2{
+    color: #032e4b;
+    font-weight: 700;
+  }
+  section.coin .container p{
+    color: #032e4b;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+  section.coin .container a{
+    text-decoration: none;
+    background: linear-gradient(to left, #007c92 0%, #ff7808 100%);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+}
+section.coin .container a:hover{
+    text-decoration: none;
+    background: linear-gradient(to left, #ff7808  0%, #007c92 100%);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
