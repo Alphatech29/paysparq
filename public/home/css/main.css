@@ -113,6 +113,45 @@ header.nav .header-container .auth-btn a:hover{
     border-radius: 10px;
     border: #005e6f 1px solid;
 }
+.card .col h6{
+    color: #032e4bcb;
+    font-size: 12px;
+}
+.card .col ul{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+ }
+
+.card .col ul li span{
+   background-color: var(--btn-color);
+   border-radius: 50%;
+   padding: 7px;
+   color: #032e4bcb;
+   font-size: 14px;
+   margin-right: 7px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 2rem;
+   height: 2rem;
+   margin-bottom: 20px;
+}
+.card .col ul li .content h5{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 120%;
+    color: #032e4b;
+    font-weight: 600;
+ }
+ .card .col ul li .content p{
+    color: #3f4a52;
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 500;
+   }
+  
 
 section.footer{
     background-color: #03232b;
@@ -154,6 +193,13 @@ section.footer .container ul li a{
     font-size: 15px;
     color: var(--zenvoxe-color);
     border-bottom: var(--primary-color) solid 1px;
+}
+section.footer .copyright{
+    color: var(--white);
+}
+section.footer .copyright a{
+    text-decoration: none;
+    color: var(--thd-color);
 }
 section.hero{
     background-image: url(/image/paysparq-bg.svg);
@@ -374,4 +420,73 @@ section.coin .container a:hover{
     padding: 10px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+}
+
+section.Giftcard{
+    background-image: url(/image/tg-bg-cyp2.svg);
+    background-size: cover;
+ }
+ section.Giftcard .container{
+   padding: 50px;
+ }
+ section.Giftcard .container h1{
+    color: #032e4b;
+    font-weight: 700;
+  }
+  section.Giftcard .container p{
+    color: #032e4b;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+  section.Giftcard .container .gift {
+    width: 100%;
+}
+section.Giftcard .container .gift ul {
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+    padding-left: 0rem;
+    margin-left: 0;
+}
+section.Giftcard .container .gift ul li{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+section.Giftcard .container .gift ul li span{
+   padding-right: 10px;
+   color: #17c500;
+}
+  section.Giftcard .container .giftcard {
+    width: 100%;
+}
+  section.Giftcard .container .giftcard a{
+    text-decoration: none;
+    background: linear-gradient(to left, #007c92 0%, #ff7808 100%);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+}
+section.Giftcard .container .giftcard a:hover{
+    text-decoration: none;
+    background: linear-gradient(to left, #ff7808  0%, #007c92 100%);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+section.data{
+    background-color: #fff;
+}
+section.data .container{
+    padding: 4rem;
+}
+section.data .container h1{
+    width:80%;
+    font-weight: 700;
+    color: #032e4b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section.data .container h1 span{
+    color: #f06006;
 }
